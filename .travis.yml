@@ -1,0 +1,16 @@
+language: rust
+
+os:
+    - linux
+
+install:
+    - sudo apt-get install yasm
+    - wget http://www.ffmpeg.org/releases/ffmpeg-2.5.4.tar.bz2
+    - tar -xjf ffmpeg-2.5.4.tar.bz2
+    - cd ffmpeg-2.5.4/
+    - ./configure --enable-shared --disable-static --prefix=/usr
+    - make -j2
+    - sudo make install
+
+script:
+    - cargo build -v
