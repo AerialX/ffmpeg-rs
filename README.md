@@ -1,5 +1,7 @@
 # ffmpeg-rs
 
+[![Build Status](https://travis-ci.org/AerialX/ffmpeg-rs.svg)](https://travis-ci.org/AerialX/ffmpeg-rs)
+
 FFmpeg bindings for Rust. Based on [rust-media](https://github.com/pcwalton/rust-media)
 with added support for `libavformat`.
 
