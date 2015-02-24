@@ -1,0 +1,11 @@
+[package]
+name = "ffmpeg-rs"
+version = "0.0.1"
+authors = [
+	"Aaron Lindsay",
+	"The Servo Project Developers"
+]
+
+[lib]
+name = "ffmpeg"
+path = "src/lib.rs"
